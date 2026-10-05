@@ -1,0 +1,106 @@
+.why-prajwal {
+  background-color: var(--c-bg-darker);
+  position: relative;
+  overflow: hidden;
+}
+
+.why-title {
+  font-size: var(--text-5xl);
+  margin-bottom: var(--spacing-16);
+}
+
+.reasons-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(30, 74, 48, 0.1);
+}
+
+.reason-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: var(--spacing-8) 0;
+  border-bottom: 1px solid rgba(30, 74, 48, 0.1);
+  position: relative;
+  transition: padding var(--transition-normal);
+}
+
+.reason-item:hover {
+  background-color: var(--c-bg);
+  padding: var(--spacing-8) var(--spacing-6);
+  margin: 0 calc(var(--spacing-6) * -1);
+}
+
+.reason-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.reason-num {
+  font-family: var(--font-serif);
+  font-size: var(--text-hero);
+  color: rgba(30, 74, 48, 0.1);
+  line-height: 0.8;
+  margin-bottom: var(--spacing-2);
+  transition: color var(--transition-normal);
+}
+
+.reason-item:hover .reason-num {
+  color: var(--c-primary);
+}
+
+.reason-title {
+  font-size: var(--text-3xl);
+  color: var(--c-text);
+  font-weight: 500;
+}
+
+.reason-content-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.reason-desc {
+  font-size: var(--text-lg);
+  color: var(--c-text-light);
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.reason-image-reveal {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(5deg) scale(0.9);
+  width: 300px;
+  height: 200px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--transition-slow);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+.reason-image-reveal.visible {
+  opacity: 1;
+  transform: translateY(-50%) rotate(-2deg) scale(1);
+}
+
+.reason-image-reveal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .reason-item {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+  }
+  
+  .reason-image-reveal {
+    display: none; 
+  }
+}

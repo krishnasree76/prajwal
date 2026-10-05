@@ -1,0 +1,87 @@
+.testimonials-section {
+  background-color: var(--c-bg);
+  overflow: hidden;
+}
+
+.marquee-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  width: 100%;
+}
+
+.marquee {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--spacing-6);
+  padding-right: var(--spacing-6);
+}
+
+.row1 .marquee-content {
+  animation: scroll-left 25s linear infinite;
+}
+
+.row2 .marquee-content {
+  animation: scroll-right 25s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+.testimonial-card {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: var(--c-bg-darker);
+  border: 1px solid rgba(30, 74, 48, 0.05);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-6) var(--spacing-8);
+  width: 350px;
+  white-space: normal;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.stars {
+  color: #FACC15; /* Gold standard star color */
+  font-size: var(--text-lg);
+  margin-bottom: var(--spacing-4);
+  letter-spacing: 2px;
+}
+
+.t-text {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  color: var(--c-text);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-6);
+  flex-grow: 1;
+}
+
+.t-author {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--c-text-light);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

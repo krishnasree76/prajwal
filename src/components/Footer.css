@@ -1,0 +1,413 @@
+/* =========================================
+   PRAJWAL FRESH BASKET - FOOTER
+========================================= */
+
+.footer-section {
+  width: 100%;
+  background: #174c32;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.footer-container {
+  width: min(1200px, calc(100% - 80px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  column-gap: 90px;
+
+  padding: 72px 0 64px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 82px;
+  height: 82px;
+
+  object-fit: contain;
+
+  background: #fff;
+  padding: 5px;
+
+  margin-bottom: 22px;
+}
+
+
+.footer-brand-name {
+  margin: 0;
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+
+  color: #a8d85c;
+}
+
+
+.footer-tagline {
+  margin: 12px 0 28px;
+
+  font-size: 11px;
+  line-height: 1.5;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* =========================================
+   FOOTER NAV
+========================================= */
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.footer-nav a {
+  position: relative;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-nav a:hover {
+  color: #a8d85c;
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   COLUMNS
+========================================= */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.footer-heading {
+  margin: 0 0 24px;
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #a8d85c;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.footer-contact-list a,
+.footer-contact-list p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  text-decoration: none;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-contact-list a {
+  transition: color 0.25s ease;
+}
+
+.footer-contact-list a:hover {
+  color: #a8d85c;
+}
+
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.footer-social {
+  margin-top: 34px;
+}
+
+.footer-social .footer-heading {
+  margin-bottom: 15px;
+}
+
+
+.instagram-link {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.instagram-link:hover {
+  color: #a8d85c;
+  transform: translateX(3px);
+}
+
+
+/* =========================================
+   DELIVERY
+========================================= */
+
+.footer-delivery {
+  padding-left: 20px;
+}
+
+.delivery-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 9px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+.delivery-day {
+  margin-bottom: 4px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+
+.delivery-group.sunday {
+  margin-top: 28px;
+}
+
+
+/* =========================================
+   BOTTOM BAR
+========================================= */
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  background: rgba(0, 0, 0, 0.08);
+}
+
+
+.footer-bottom-inner {
+  width: min(1200px, calc(100% - 80px));
+  min-height: 64px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 13px;
+  letter-spacing: 0.2px;
+}
+
+
+.footer-bottom-dot {
+  color: #a8d85c;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .footer-container {
+    width: min(700px, calc(100% - 50px));
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 55px 50px;
+
+    padding: 60px 0 55px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-delivery {
+    padding-left: 0;
+  }
+
+  .footer-bottom-inner {
+    width: calc(100% - 50px);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .footer-container {
+    width: calc(100% - 40px);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 42px;
+
+    padding: 50px 0 45px;
+  }
+
+
+  .footer-brand {
+    align-items: flex-start;
+  }
+
+
+  .footer-logo {
+    width: 72px;
+    height: 72px;
+
+    margin-bottom: 18px;
+  }
+
+
+  .footer-brand-name {
+    font-size: 21px;
+    letter-spacing: 1px;
+  }
+
+
+  .footer-tagline {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+
+    margin-bottom: 24px;
+  }
+
+
+  .footer-nav {
+    gap: 10px 20px;
+  }
+
+
+  .footer-heading {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+
+  .footer-contact-list a,
+  .footer-contact-list p {
+    font-size: 14px;
+  }
+
+
+  .footer-social {
+    margin-top: 28px;
+  }
+
+
+  .footer-delivery {
+    padding-left: 0;
+  }
+
+
+  .delivery-group {
+    font-size: 14px;
+  }
+
+
+  .footer-bottom-inner {
+    width: calc(100% - 40px);
+
+    min-height: 72px;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    text-align: center;
+
+    font-size: 12px;
+  }
+
+
+  .footer-bottom-dot {
+    display: none;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .footer-container {
+    width: calc(100% - 30px);
+  }
+
+  .footer-brand-name {
+    font-size: 19px;
+  }
+
+  .footer-nav {
+    gap: 9px 16px;
+  }
+}
