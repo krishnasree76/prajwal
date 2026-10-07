@@ -48,10 +48,10 @@
   letter-spacing: 0.05em;
 }
 
-.nav-brand-text span:last-child {
+.nav-brand-text span:nth-child(2) {
   font-size: 12px;
-  font-weight: 500;
-  color: var(--c-food-accent); /* Small pop of color */
+  font-weight: 700;
+  color: var(--c-primary);
   letter-spacing: 0.1em;
 }
 

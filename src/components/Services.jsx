@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import './Services.css';
 
 const servicesData = [
-  { id: 'fresh-chicken', title: 'Fresh Chicken', desc: 'Freshly prepared chicken delivered fresh to your doorstep.', img: '/images/premium_fresh_chicken_1791211235743.png' },
+  { id: 'fresh-chicken', title: 'Fresh Chicken', desc: 'Freshly prepared chicken delivered fresh to your doorstep.', img: '/images/image.png' },
   { id: 'fresh-fish', title: 'Fresh Fish', desc: 'Fresh fish selected for quality and delivered straight to your doorstep.', img: '/images/premium_fresh_fish_1791211250954.png' },
   { id: 'farm-fresh-eggs', title: 'Farm Fresh Eggs', desc: 'Fresh eggs carefully selected for your everyday breakfast preparation.', img: '/images/farm_fresh_eggs_1791211266680.png' },
   { id: 'idly-batter', title: 'Idly Batter', desc: 'Freshly prepared batter for soft, fluffy idlis at home.', img: '/images/premium_idli_1791211282748.png' },
@@ -15,20 +15,20 @@ const Services = ({ onOrderClick }) => {
   return (
     <section className="services-section section-padding" id="services">
       <div className="container">
-        
-        <motion.div 
+
+        <motion.div
           className="section-header text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">WHAT WOULD YOU LIKE<br/>FRESH TODAY?</h2>
+          <h2 className="section-title">WHAT WOULD YOU LIKE<br />FRESH TODAY?</h2>
         </motion.div>
 
         <div className="services-grid">
           {servicesData.map((service, idx) => (
-            <motion.div 
+            <motion.div
               key={service.id}
               className="service-clean-card"
               onClick={() => onOrderClick(service.id)}
@@ -43,7 +43,7 @@ const Services = ({ onOrderClick }) => {
               <div className="card-content">
                 <h3 className="card-title">{service.title}</h3>
                 <p className="card-desc">{service.desc}</p>
-                <button 
+                <button
                   className="card-cta-btn"
                   onClick={(e) => {
                     e.stopPropagation();

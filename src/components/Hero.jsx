@@ -41,6 +41,11 @@ const Hero = ({ onOrderClick }) => {
             <button className="btn btn-primary" onClick={onOrderClick}>ORDER FRESH</button>
             <button className="btn btn-outline" onClick={scrollToServices}>VIEW SERVICES</button>
           </div>
+
+          <div style={{ marginTop: '1.25rem', fontSize: '0.9rem', color: 'var(--c-text-light)', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+            <span style={{ color: 'var(--c-food-accent)', fontSize: '1.1rem' }}>*</span>
+            <span>Chicken and eggs are as per paper rates.</span>
+          </div>
         </motion.div>
 
         {/* Right Side: Static Premium Photography */}
